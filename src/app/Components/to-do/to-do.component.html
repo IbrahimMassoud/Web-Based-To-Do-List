@@ -1,0 +1,24 @@
+<style>
+#container :hover{
+    transform: translateY(-2px);
+}
+</style>
+
+<div id="container" >
+    <div  [ngClass]=  "{'completed': toDo.completed === true , 'basic': toDo.completed === false }">
+        <div  class="row" >
+            <div class="col-10">
+                <input type="checkbox" (change)="Checked()" [checked]="toDo.completed" >
+                {{toDo.taskName}}.&nbsp;&nbsp; &nbsp;  &nbsp; 
+               
+                {{toDo.Date}}.&nbsp;&nbsp; &nbsp;&nbsp;
+                 From {{toDo.startTime}}
+                To:  {{toDo.endTime}}.
+            </div>
+            <div class="col-1">
+            <button class="btn btn-danger btn-sm" (click)="btnDeleteRaiser()">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+

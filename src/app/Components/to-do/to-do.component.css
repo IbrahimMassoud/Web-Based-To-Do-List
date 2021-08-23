@@ -1,0 +1,16 @@
+
+.completed{
+    margin: 10px;
+    background: rgb(31, 223 ,197);
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: line-through;
+    color: white;
+    box-shadow: 0 4px 20px rgba(7, 4, 4, 0.7);
+}
+.basic{
+    margin: 10px;
+    background: #fd6076; 
+    padding: 5px;
+    border-radius: 10px;
+}

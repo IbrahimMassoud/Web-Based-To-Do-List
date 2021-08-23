@@ -1,0 +1,45 @@
+<!-- 
+
+<div id="newToDo" class="container">
+  <app-date></app-date>
+  <form>
+          <div class="row">
+                  <input class=" col-5 form-control" type="text" placeholder="Task Name"
+                          style="margin:15px ;  margin-left: 40px">
+                  <button class="btn btn-primary col-3" style=" margin:15px ;margin-left: 40px;">
+                          Add New Task</button>
+          </div>
+  </form>
+</div> -->
+
+
+<div id="newToDo" class="container">
+        <div class="row">
+                <div class="col-xs-12 col-12 col-sm-6 col-md-4 form-group">
+                        <form [formGroup]="myForm">
+                                <input type="text" class="form-control mb-3" placeholder="Enter The Date" bsDatepicker
+                                        formControlName="date" (ngModelChange)="DateSelected()"
+                                        [bsConfig]="{ containerClass: 'theme-blue' }"
+                                        style="margin-top: 25px; margin-left: 25px; margin-right: 40px;">
+                        </form>
+                </div>
+
+                <div class="col-4">
+                        <timepicker [(ngModel)]="mytime_S" (ngModelChange)="StartTimeSelected()"></timepicker>
+                </div>
+
+                <div class="col-3">
+                        <timepicker [(ngModel)]="mytime_E" (ngModelChange)="EndTimeSelected()"></timepicker>
+                </div>
+        </div>
+
+        <div class="row">
+                <input class=" col-5 form-control" type="text" placeholder="Task Name"
+                        style="margin:15px ;  margin-left: 40px" [(ngModel)]="taskName"
+                        (ngModelChange)="TaskNameSelected()">
+                <button class="btn btn-primary col-3" style=" margin:15px ;margin-left: 40px;" (click)="AddNewRaiser()">
+                        Add New Task
+                </button>
+                <!-- <div>{{taskName}}</div> -->
+        </div>
+</div>

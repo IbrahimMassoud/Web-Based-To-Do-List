@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "C:/Users/Massoud/New-App/node_modules/bootstrap/dist/css/bootstrap.css" ;
+
+body{
+    background-color: #A8D0E6;
+    background-image: url('src/app/Resources/BackGImage.png');
+ /* Full height */
+ height: 100%; 
+ width: 100%;
+  
+ /* Center and scale the image nicely */
+ /* background-position: center; */
+ background-repeat: no-repeat;
+ background-size: 100%;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

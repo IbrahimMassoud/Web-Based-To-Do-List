@@ -1,0 +1,22 @@
+#tPicker
+{
+    margin-left: 5px;
+}
+
+#Parent{
+    background-color: white;
+    width: 47%;
+    padding: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#newToDo{
+    background-color: rgb(207, 207 ,207); 
+    width: 47%;
+    padding-top: 15px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
